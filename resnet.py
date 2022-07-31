@@ -11,3 +11,18 @@ model = ResNet152(weights='imagenet')
 
 # Evaluation
 
+for i in range(1, 4):
+    if i == 3:
+        img = image.load_img(f'{i}.jpeg', target_size=(224, 224))
+    else:    
+        img = image.load_img(f'{i}.jpg', target_size=(224, 224))
+
+    independent_variables = image.img_to_array(img)
+    independent_variables = np.expand_dims(independent_variables, axis=0)
+    # print(np.shape(independent_variables))
+
+    independent_variables = preprocess_input(independent_variables)
+
+    predictions = model.predict(independent_variables) # 1000 outputs
+
+    print(decode_predictions(predictions, top=3))

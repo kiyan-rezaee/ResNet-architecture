@@ -58,3 +58,9 @@ Non-trainable params: 151,424
 | lynx     	        | 0.02759154   	    |   
 
 <hr>
+
+
+## for fun :)
+
+
+![coffee mug](/videocapture(2).jpg)

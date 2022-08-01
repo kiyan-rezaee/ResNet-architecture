@@ -46,7 +46,7 @@ Non-trainable params: 151,424
 
 <hr>
 
-### Image one : 
+### Image three : 
 ![cat image](/3.jpeg)
 
 ### model predictions (top 3) : 
